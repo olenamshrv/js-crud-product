@@ -133,6 +133,42 @@ class Product {
   }
 }
 
+/////////////////////////////
+
+Product.add(new Product('TV', 1250, 'Toshiba, 100 inches'))
+
+Product.add(
+  new Product(
+    'Стіл із регулюванням висоти',
+    4699,
+    'Стіл із регулюванням висоти RZTK Desk Compact White 700 х 400 мм',
+  ),
+)
+
+Product.add(
+  new Product(
+    'Кавовий столик',
+    2802,
+    'Кавовий столик Nowy Styl FINE ordf ALU (36) D680 Білий',
+  ),
+)
+
+Product.add(
+  new Product(
+    'Кавовий столик',
+    2802,
+    'Кавовий столик Nowy Styl FINE ordf ALU (36) D680 Білий',
+  ),
+)
+
+Product.add(
+  new Product(
+    'Кавовий столик',
+    2802,
+    'Кавовий столик Nowy Styl FINE ordf ALU (36) D680 Білий',
+  ),
+)
+
 // ================================================================
 
 // router.get Створює нам один ентпоїнт
@@ -293,42 +329,6 @@ router.post('/product-create', function (req, res) {
 // ↙️ тут вводимо шлях (PATH) до сторінки
 router.get('/product-list', function (req, res) {
   // res.render генерує нам HTML сторінку
-
-  // Product.add(
-  //   new Product('TV', 1250, 'Toshiba, 100 inches'),
-  // )
-
-  // Product.add(
-  //   new Product(
-  //     'Стіл із регулюванням висоти',
-  //     4699,
-  //     'Стіл із регулюванням висоти RZTK Desk Compact White 700 х 400 мм',
-  //   ),
-  // )
-
-  // Product.add(
-  //   new Product(
-  //     'Кавовий столик',
-  //     2802,
-  //     'Кавовий столик Nowy Styl FINE ordf ALU (36) D680 Білий',
-  //   ),
-  // )
-
-  // Product.add(
-  //   new Product(
-  //     'Кавовий столик',
-  //     2802,
-  //     'Кавовий столик Nowy Styl FINE ordf ALU (36) D680 Білий',
-  //   ),
-  // )
-
-  // Product.add(
-  //   new Product(
-  //     'Кавовий столик',
-  //     2802,
-  //     'Кавовий столик Nowy Styl FINE ordf ALU (36) D680 Білий',
-  //   ),
-  // )
 
   const list = Product.getList()
 
